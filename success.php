@@ -9,7 +9,7 @@
         unset($_SESSION['logged_in']);
         unset($_SESSION['logged_in_expiration']);
         http_response_code(403);
-        header('Location: http://localhost/hello/index.php');
+        header('Location: http://localhost/osint/index.php');
         exit();
     }
 ?>

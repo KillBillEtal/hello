@@ -7,7 +7,7 @@
 
     if ($_SERVER["REQUEST_METHOD"] !== "POST"){
         handleMessage("Oups :( Un problème est survenue lors de la validation du formulaire !");
-        header('Location: http://localhost/hello/public/index.php');
+        header('Location: http://localhost/osint/index.php');
         exit();
     }
 
@@ -28,18 +28,18 @@
         if($username === $user && $password === $pswd){
             $_SESSION['logged_in'] = true;
             $_SESSION['logged_in_expiration'] = time() + 300;
-            header('Location: http://localhost/hello/public/success.php');
+            header('Location: http://localhost/osint/success.php');
             exit();
         }
         else{
             handleMessage("C'est pas bon");
-            header('Location: http://localhost/hello/public/index.php');
+            header('Location: http://localhost/osint/index.php');
             exit();
         }
     }
     else{
         handleMessage("Il faut tous remplir ;)");
-        header('Location: http://localhost/hello/public/index.php');
+        header('Location: http://localhost/osint/index.php');
         exit();
     }
 
