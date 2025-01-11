@@ -1,0 +1,7 @@
+/auth/.htpasswd
+.htpasswd
+/auth
+.htaccess
+/.htaccess
+config-auth.php
+check-redirect.php
